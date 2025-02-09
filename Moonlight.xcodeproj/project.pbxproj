@@ -39,6 +39,7 @@
 		98B9CE6D27B2144B00B473C4 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B9CE6C27B2144B00B473C4 /* AVKit.framework */; };
 		98CFB82F1CAD481B0048EF74 /* libmoonlight-common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98AB2E841CAD46840089BB98 /* libmoonlight-common.a */; };
 		98D585701C0ED0E800F6CC00 /* TemporarySettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D5856F1C0ED0E800F6CC00 /* TemporarySettings.m */; };
+		D08CE15E2D584D2A00A85D72 /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = D08CE15D2D584D2A00A85D72 /* OpenSSL */; };
 		DC1F5A07206436B20037755F /* ConnectionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1F5A06206436B20037755F /* ConnectionHelper.m */; };
 		F71801422B65483D00A9336B /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71801412B65483D00A9336B /* AppsView.swift */; };
 		F71801442B654D9100A9336B /* TemporaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71801432B654D9100A9336B /* TemporaryApp.swift */; };
@@ -507,6 +508,7 @@
 				F7A119432B5DDF73001E8686 /* CoreGraphics.framework in Frameworks */,
 				F7A119442B5DDF73001E8686 /* CoreData.framework in Frameworks */,
 				F7A119F62B5DE71C001E8686 /* libavutil.a in Frameworks */,
+				D08CE15E2D584D2A00A85D72 /* OpenSSL in Frameworks */,
 				F718014F2B657DB600A9336B /* OrderedCollections in Frameworks */,
 				F7A11A1E2B5DF457001E8686 /* UIKit.framework in Frameworks */,
 				F7A119452B5DDF73001E8686 /* CoreMotion.framework in Frameworks */,
@@ -1052,6 +1054,7 @@
 			packageProductDependencies = (
 				F77B58A82B5EED5900482BD5 /* OpenSSL */,
 				F718014E2B657DB600A9336B /* OrderedCollections */,
+				D08CE15D2D584D2A00A85D72 /* OpenSSL */,
 			);
 			productName = Limelight;
 			productReference = F7A119552B5DDF73001E8686 /* Moonlight Vision.app */;
@@ -1136,8 +1139,8 @@
 			);
 			mainGroup = FB290CE519B2C406004C83CF;
 			packageReferences = (
-				F7A3564F2B5EC14C0040E253 /* XCRemoteSwiftPackageReference "OpenSSL" */,
 				F718014D2B657DB600A9336B /* XCRemoteSwiftPackageReference "swift-collections" */,
+				D08CE15C2D584D2A00A85D72 /* XCRemoteSwiftPackageReference "OpenSSL-Package" */,
 			);
 			productRefGroup = FB290CEF19B2C406004C83CF /* Products */;
 			projectDirPath = "";
@@ -1430,7 +1433,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 7;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9F7HSLF799;
+				DEVELOPMENT_TEAM = 6QW39KR85Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Limelight/Limelight-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1477,7 +1480,7 @@
 				);
 				MARKETING_VERSION = 9.0.1;
 				OTHER_LDFLAGS = "-ld64";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.moonlight-stream-beta.Moonlight-Vision";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigq.Moonlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = xros;
@@ -1506,7 +1509,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 7;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9F7HSLF799;
+				DEVELOPMENT_TEAM = 6QW39KR85Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Limelight/Limelight-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1553,7 +1556,7 @@
 				);
 				MARKETING_VERSION = 9.0.1;
 				OTHER_LDFLAGS = "-ld64";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.moonlight-stream-beta.Moonlight-Vision";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigq.Moonlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = xros;
@@ -1587,7 +1590,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9F7HSLF799;
+				DEVELOPMENT_TEAM = 6QW39KR85Z;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1617,7 +1620,7 @@
 				);
 				MARKETING_VERSION = 9.0.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.moonlight-stream.Moonlight";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigq.Moonlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OBJC_BRIDGING_HEADER = "Limelight/Input/Moonlight-Bridging-Header.h";
@@ -1644,7 +1647,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9F7HSLF799;
+				DEVELOPMENT_TEAM = 6QW39KR85Z;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1674,7 +1677,7 @@
 				);
 				MARKETING_VERSION = 9.0.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.moonlight-stream.Moonlight";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigq.Moonlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -1804,7 +1807,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9F7HSLF799;
+				DEVELOPMENT_TEAM = 6QW39KR85Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Limelight/Limelight-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1833,7 +1836,7 @@
 					"$(PROJECT_DIR)/libs/FFmpeg/lib/iOS-Sim",
 				);
 				MARKETING_VERSION = 9.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.moonlight-stream.Moonlight";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigq.Moonlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = NO;
@@ -1856,7 +1859,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9F7HSLF799;
+				DEVELOPMENT_TEAM = 6QW39KR85Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Limelight/Limelight-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1885,7 +1888,7 @@
 					"$(PROJECT_DIR)/libs/FFmpeg/lib/iOS-Sim",
 				);
 				MARKETING_VERSION = 9.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.moonlight-stream.Moonlight";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigq.Moonlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = NO;
@@ -1941,6 +1944,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D08CE15C2D584D2A00A85D72 /* XCRemoteSwiftPackageReference "OpenSSL-Package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/OpenSSL-Package.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.3.2000;
+			};
+		};
 		F718014D2B657DB600A9336B /* XCRemoteSwiftPackageReference "swift-collections" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-collections.git";
@@ -1949,17 +1960,14 @@
 				minimumVersion = 1.0.6;
 			};
 		};
-		F7A3564F2B5EC14C0040E253 /* XCRemoteSwiftPackageReference "OpenSSL" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/alexhaugland/OpenSSL";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D08CE15D2D584D2A00A85D72 /* OpenSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D08CE15C2D584D2A00A85D72 /* XCRemoteSwiftPackageReference "OpenSSL-Package" */;
+			productName = OpenSSL;
+		};
 		F718014E2B657DB600A9336B /* OrderedCollections */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F718014D2B657DB600A9336B /* XCRemoteSwiftPackageReference "swift-collections" */;
@@ -1977,17 +1985,14 @@
 		};
 		F77B58A82B5EED5900482BD5 /* OpenSSL */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F7A3564F2B5EC14C0040E253 /* XCRemoteSwiftPackageReference "OpenSSL" */;
 			productName = OpenSSL;
 		};
 		F77B58AA2B5EED5E00482BD5 /* OpenSSL */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F7A3564F2B5EC14C0040E253 /* XCRemoteSwiftPackageReference "OpenSSL" */;
 			productName = OpenSSL;
 		};
 		F7A356502B5EC14C0040E253 /* OpenSSL */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F7A3564F2B5EC14C0040E253 /* XCRemoteSwiftPackageReference "OpenSSL" */;
 			productName = OpenSSL;
 		};
 /* End XCSwiftPackageProductDependency section */

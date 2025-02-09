@@ -737,12 +737,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F77B58AC2B5EED9A00482BD5 /* XCRemoteSwiftPackageReference "OpenSSL" */ = {
+		F74BEF9D2C1A707200224667 /* XCRemoteSwiftPackageReference "OpenSSL-Package" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/alexhaugland/OpenSSL";
+			repositoryURL = "https://github.com/krzyzanowskim/OpenSSL-Package.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.5004;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

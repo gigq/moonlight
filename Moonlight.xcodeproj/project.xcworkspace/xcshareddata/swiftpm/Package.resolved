@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "openssl",
+      "identity" : "openssl-package",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/alexhaugland/OpenSSL",
+      "location" : "https://github.com/krzyzanowskim/OpenSSL-Package.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "462fdd5380632cf8bd3e35e2f59b2bb1b6197372"
+        "revision" : "b9eb055fdf73e595cb4b9f665d13dc85975bf80a",
+        "version" : "3.3.2000"
       }
     },
     {
